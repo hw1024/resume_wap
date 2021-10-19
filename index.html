@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico"><title>app</title><script>window.calcFontSize = () => {
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel="icon" href="favicon.ico"><title>app</title><script>window.calcFontSize = () => {
               document.documentElement.style.fontSize =
                   Math.min(
                       document.documentElement.clientWidth,
@@ -8,4 +8,14 @@
                   "px";
           };
 
-          window.calcFontSize();</script><link href="static/css/chunk-7da0b180.7083745b.css" rel="prefetch"><link href="static/js/chunk-7da0b180.05f282f0.js" rel="prefetch"><link href="static/css/app.be8ec84d.css" rel="preload" as="style"><link href="static/css/chunk-vendors.c9a0ba64.css" rel="preload" as="style"><link href="static/js/app.bb5c51dc.js" rel="preload" as="script"><link href="static/js/chunk-vendors.2e5bb91e.js" rel="preload" as="script"><link href="static/css/chunk-vendors.c9a0ba64.css" rel="stylesheet"><link href="static/css/app.be8ec84d.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="static/js/chunk-vendors.2e5bb91e.js"></script><script src="static/js/app.bb5c51dc.js"></script></body></html>
+          window.calcFontSize();
+          window.onload = function() {
+              document.addEventListener('touchstart', function(event) {
+                  if (event.touches.length > 1) {
+                      event.preventDefault()
+                  }
+              })
+              document.addEventListener('gesturestart', function(event) {
+                  event.preventDefault()
+              })
+          }</script><link href="static/css/chunk-6921898e.4d4ba841.css" rel="prefetch"><link href="static/js/chunk-6921898e.98967017.js" rel="prefetch"><link href="static/css/app.e7e04d7e.css" rel="preload" as="style"><link href="static/css/chunk-vendors.12abf080.css" rel="preload" as="style"><link href="static/js/app.45865718.js" rel="preload" as="script"><link href="static/js/chunk-vendors.f842e601.js" rel="preload" as="script"><link href="static/css/chunk-vendors.12abf080.css" rel="stylesheet"><link href="static/css/app.e7e04d7e.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="static/js/chunk-vendors.f842e601.js"></script><script src="static/js/app.45865718.js"></script></body></html>
