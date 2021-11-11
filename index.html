@@ -1,4 +1,12 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel="icon" href="favicon.ico"><title>app</title><script>window.calcFontSize = () => {
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel="icon" href="favicon.ico"><title>app</title><script>//判断手机横竖屏状态：
+			function hengshuping(){
+			if(window.orientation==90||window.orientation==-90){
+				   window.location.reload();
+				}
+			}
+			window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+			
+	         window.calcFontSize = () => {
 	             document.documentElement.style.fontSize =
 	                 Math.min(
 	                     document.documentElement.clientWidth,
